@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Poppins:wght@400;500&display=swap");
+:root {
+  --first-color:hsl(260,100%,66%);
+  --first-color:hsl(328,100%,66%);
+  --body-color:hsl(260,100%,97%);
+  --text-color:hsl(260,24%,32%);
+  --title-color:hsl(260,80%,18%);
+  --body-font: 'Poppins', sans-serif;
+  --second-font: 'Lora', serif;
+  --normal-font-size:.938rem;
+  --h1-font-size:1.5rem;
+  --h2-font-size:1.25rem;
+  --h3-font-size:1rem;
+  --big-font-size:1.75rem;
+  --bigger-font-size:2rem;
+  --biggest-font-size:2.75rem;
+  --small-font-size:.813rem;
+  --smaller-font-size:.75rem;
+  --font-regular:400;
+  --font-medium:500;
+  --z-tooltip:10;
+  --z-fixed:100;
+}
+
+:root {
+  --first-color:hsl(260,100%,66%);
+  --first-color:hsl(328,100%,66%);
+  --body-color:hsl(260,100%,97%);
+  --text-color:hsl(260,24%,32%);
+  --title-color:hsl(260,80%,18%);
+  --body-font: 'Poppins', sans-serif;
+  --second-font: 'Lora', serif;
+  --normal-font-size:.938rem;
+  --h1-font-size:1.5rem;
+  --h2-font-size:1.25rem;
+  --h3-font-size:1rem;
+  --big-font-size:1.75rem;
+  --bigger-font-size:2rem;
+  --biggest-font-size:2.75rem;
+  --small-font-size:.813rem;
+  --smaller-font-size:.75rem;
+  --font-regular:400;
+  --font-medium:500;
+  --z-tooltip:10;
+  --z-fixed:100;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+input,
+button {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: var(--body-color);
+  top: 0;
+  left: 0;
+  z-index: var(z-fixed);
+}
+
+.nav {
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav .nav_logo {
+  font-size: var(--h2-font-size);
+  font-family: var(--second-font);
+  font-weight: var(--font-medium);
+  background: var(--gradient-color);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.nav .nav_menu .nav_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 3rem;
+}
+
+.nav .nav_link {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
+.nav .nav-close, .nav .nav_toogle {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+}
+
+@media screen and (max-width: 767px) {
+  .nav_menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 75%;
+    height: 100%;
+    padding: 4.5rem 0 0 3rem;
+    -webkit-backdrop-filter: blur(24px);
+            backdrop-filter: blur(24px);
+    -webkit-transition: right .4s;
+    transition: right .4s;
+  }
+}
+/*# sourceMappingURL=style.css.map */
