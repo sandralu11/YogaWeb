@@ -3,11 +3,11 @@
 
 :root{
   --first-color:hsl(260,100%,66%);
-  --first-color:hsl(328,100%,66%);
+  --second-color:hsl(328,100%,66%);
   --body-color:hsl(260,100%,97%);
   --text-color:hsl(260,24%,32%);
   --title-color:hsl(260,80%,18%);
-  --gradient-color:;
+  --gradient-color:linear-gradient(75deg,var(--second-color)12%,var(--first-color)90%);
 // ========== Fonts & Typography==========
   --body-font: 'Poppins', sans-serif;
   --second-font: 'Lora', serif;

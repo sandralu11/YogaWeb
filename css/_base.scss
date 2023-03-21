@@ -13,6 +13,12 @@ button{
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
 }
+a{
+  text-decoration:none;
+}
+ul,li{
+  list-style: none;
+}
 body{
   background-color: var(--body-color);
   color: var(--text-color);

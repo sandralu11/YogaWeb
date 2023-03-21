@@ -2,10 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Poppins:wght@400;500&display=swap");
 :root {
   --first-color:hsl(260,100%,66%);
-  --first-color:hsl(328,100%,66%);
+  --second-color:hsl(328,100%,66%);
   --body-color:hsl(260,100%,97%);
   --text-color:hsl(260,24%,32%);
   --title-color:hsl(260,80%,18%);
+  --gradient-color:linear-gradient(75deg,var(--second-color)12%,var(--first-color)90%);
   --body-font: 'Poppins', sans-serif;
   --second-font: 'Lora', serif;
   --normal-font-size:.938rem;
@@ -25,10 +26,11 @@
 
 :root {
   --first-color:hsl(260,100%,66%);
-  --first-color:hsl(328,100%,66%);
+  --second-color:hsl(328,100%,66%);
   --body-color:hsl(260,100%,97%);
   --text-color:hsl(260,24%,32%);
   --title-color:hsl(260,80%,18%);
+  --gradient-color:linear-gradient(75deg,var(--second-color)12%,var(--first-color)90%);
   --body-font: 'Poppins', sans-serif;
   --second-font: 'Lora', serif;
   --normal-font-size:.938rem;
@@ -64,6 +66,14 @@ button {
   font-size: var(--normal-font-size);
 }
 
+a {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
 body {
   background-color: var(--body-color);
   color: var(--text-color);
@@ -95,6 +105,7 @@ header {
   font-family: var(--second-font);
   font-weight: var(--font-medium);
   background: var(--gradient-color);
+  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -134,6 +145,9 @@ header {
             backdrop-filter: blur(24px);
     -webkit-transition: right .4s;
     transition: right .4s;
+  }
+  .show-menu {
+    right: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

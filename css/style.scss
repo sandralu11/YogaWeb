@@ -2,7 +2,6 @@
 @import "mixin";
 @import "mixinRwd";
 @import "base";
-
 .nav{
   height: 300px;
   display: flex;
@@ -13,8 +12,9 @@
     font-family: var(--second-font);
     font-weight: var(--font-medium);
     background: var(--gradient-color);
-    -webkit-background-clip:text ;
-    color:transparent
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
   }
   .nav_menu{
     .nav_list{
@@ -31,12 +31,8 @@
     position: absolute;
     top: 1rem;
     right: 1.5rem;
-
   }
 }
-
-
-
 // ========== mobile devices ==========
 @media screen and (max-width:767px){
   .nav_menu{
@@ -49,5 +45,8 @@
     padding: 4.5rem 0 0 3rem;
     backdrop-filter: blur(24px);
     transition: right .4s;
+  }
+  .show-menu{
+    right: 0;
   }
 }
